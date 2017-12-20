@@ -8,9 +8,9 @@ bot = commands.Bot(command_prefix='!',description="A bot made ay Antony, revivin
 
 @bot.event
 async def on_ready():
-#ctx.send("Bot is online!")
+await ctx.send("Bot is online!")
 
 
 if not os.environ.get('TOKEN'):
-  print("no token found REEEE!")
+print("no token found REEEE!")
 bot.run(os.environ.get('TOKEN').strip('\"'))
